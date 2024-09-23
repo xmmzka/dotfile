@@ -1,0 +1,6 @@
+
+@theme "/home/circute/.local/share/rofi/themes/rounded-nord-dark.rasi"
+
+configuration {
+    font: "JMH 10";
+}

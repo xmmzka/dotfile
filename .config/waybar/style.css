@@ -1,0 +1,367 @@
+/* height: 40 */
+
+* {
+    font-family: "SpaceMono Nerd Font", "JMH";
+    font-weight: 900;
+    font-size: 14px;
+    text-shadow: none;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+window#waybar.hidden {
+    opacity: 0;
+}
+
+/* 工具提示 */
+tooltip {
+    background-color: #2c4f63;
+    border: none;
+    border-radius: 8px;
+}
+
+/* 左侧标题指示器样式 */
+#window {
+    background: linear-gradient(to top right, #8ee6fc, #8ee6fc);
+    color: #002341;
+    margin: 6px 10px 6px 10px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#window:hover {
+    background: linear-gradient(to left, #62f3fd, #0099ff);
+}
+
+/* 电源管理按钮样式 */
+#custom-shutdown {
+    font-size: 14px;
+    background-color: rgba(255, 56, 56, 0.4);
+    color: black;
+    margin: 9px 5px;
+    padding: 0px 15px;
+    border-radius: 11px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-shutdown:hover {
+    background-color: #ff3838;
+}
+
+#custom-reboot {
+    font-size: 14px;
+    background-color: rgba(56, 255, 139, 0.4);
+    color: black;
+    margin: 9px 5px;
+    padding: 0px 15px;
+    border-radius: 11px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-reboot:hover {
+    background-color: #38ff8b;
+}
+
+
+#custom-sleep {
+    font-size: 14px;
+    background-color: rgba(56, 225, 255, 0.4);
+    color: black;
+    margin: 9px 10px 9px 5px;
+    padding: 0px 15px;
+    border-radius: 11px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-sleep:hover {
+    background-color: #38e1ff;
+}
+
+/* 背光调节 */
+#backlight {
+    background-color: #feffab;
+    color: #222500;
+    margin: 6px 10px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#backlight:hover {
+    background-color: #fbff00;
+}
+
+/* 壁纸 */
+#custom-wallpapericon {
+    background-color: #ff9575;
+    color: #201000;
+    margin: 6px 10px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-wallpapericon:hover {
+    background-color: #ff6d41;
+}
+
+#custom-wallpaper1 {
+    background-color: #ffefc4;
+    color: #201000;
+    margin: 6px 10px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-wallpaper1:hover {
+    background-color: #fff383;
+}
+
+#custom-wallpaper2 {
+    background-color: #ffefc4;
+    color: #201000;
+    margin: 6px 10px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-wallpaper2:hover {
+    background-color: #fff383;
+}
+
+#custom-wallpaper3 {
+    background-color: #8acbff;
+    color: #201000;
+    margin: 6px 10px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-wallpaper3:hover {
+    background-color: #fff383;
+}
+
+
+
+@keyframes musicplayannimation {
+    0% {
+        background: linear-gradient(to top right, #00E0EE, #db8dff);
+    }
+
+    50% {
+        background: linear-gradient(to top right, #db8dff, #00E0EE);
+    }
+
+    100% {
+        background: linear-gradient(to top right, #00E0EE, #db8dff);
+    }
+}
+
+
+#mpris {
+    font-family: "JMH";
+    background: linear-gradient(to top right, #00E0EE, #db8dff);
+    color: #000f17;
+    margin: 6px 10px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+    animation: musicplayannimation 4s;
+    animation-iteration-count: infinite;
+}
+
+#mpris:hover {
+    background: linear-gradient(to right, #64f3fd, #1e65ff);
+    animation: none;
+}
+
+#pulseaudio {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #c9c8cf;
+    margin: 8px 0px 8px 0px;
+    border-radius: 12px;
+    padding: 0px 12px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#pulseaudio:hover {
+    background-color: rgba(0, 195, 255, 0.76);
+    color: #ffffff;
+}
+
+#workspaces {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 7px 10px;
+    padding: 0;
+    border-radius: 13px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+
+#workspaces button {
+    border-radius: 13px;
+    border: none;
+    padding: 0 10px;
+    color: #ffffff;
+    margin: 0 5px;
+    background: linear-gradient(to right, rgba(190, 251, 255, 0), rgba(190, 251, 255, 0));
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#workspaces :first-child {
+    margin-left: 0px;
+}
+
+#workspaces :last-child {
+    margin-right: 0px;
+}
+
+#workspaces button:hover {
+    background: linear-gradient(to top right, #50ffff, #6207d0);
+}
+
+#workspaces button.active {
+    background: linear-gradient(to right, #e9ffbe, #e9ffbe);
+    color: #000000;
+}
+
+#workspaces button.active:hover {
+    background: linear-gradient(to top right, #64f3fd, #1e65ff);
+}
+
+#workspaces button.urgent {
+    background-color: #ff5a57;
+}
+
+
+#clock {
+    background: linear-gradient(to top right, #b68bff, #8bfff1);
+    color: #000000;
+    margin: 6px 10px 6px 10px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#clock:hover {
+    background: linear-gradient(to left, #0099ff, #62f3fd);
+}
+
+#cpu {
+    background-color: #a7fcc8;
+    color: #2d0000;
+    margin: 6px 0px;
+    padding: 0px 14px;
+    border-radius: 0px 14px 14px 0px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#cpu:hover {
+    background-color: #abff76;
+}
+
+
+#memory {
+    background-color: #ffb994;
+    color: #000000;
+    margin: 6px 0px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 0px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#memory:hover {
+    background-color: #ff9258;
+}
+
+#network {
+    background-color: #48cbff;
+    color: #000000;
+    margin: 6px 0px 6px 10px;
+    padding: 0px 14px;
+    border-radius: 14px 0px 0px 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#network:hover {
+    background-color: #0091ff;
+}
+
+
+
+#custom-trayicon {
+    background: linear-gradient(to left, #4d7cff, #6affff);
+    margin: 6px 0px 6px 0px;
+    padding: 0px 14px;
+    border-radius: 14px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#custom-trayicon:hover {
+    background: linear-gradient(to left, #00e1ff, #b6fffb);
+
+}
+
+#tray {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 8px 0px 8px 10px;
+    padding: 0px 12px;
+    border-radius: 12px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+#tray:hover {
+    background-color: rgba(0, 136, 255, 0.7);
+}
+
+#privacy {
+    margin: 0px 10px 0px 0px;
+}
+
+/* #privacy-item.audio-out {
+    background-color: #0099ff;
+    color: #0099ff;
+    margin: 15px 0;
+    padding: 0 4px;
+    border-radius: 5px;
+} */
+/* #privacy-item.audio-in {
+    background-color: #0099ff;
+    color: #0099ff;
+    margin: 15px 0;
+    padding: 0 4px;
+    border-radius: 5px;
+} */
+#privacy-item {
+    background-color: #ff0000;
+    color: #ff0000;
+    margin: 15px 0;
+    padding: 0 4px;
+    border-radius: 5px;
+}
