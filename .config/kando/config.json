@@ -1,0 +1,17 @@
+{
+  "menuTheme": "clean-circle",
+  "darkMenuTheme": "default",
+  "menuThemeColors": {
+    "clean-circle": {
+      "action-icon-color": "rgba(199, 233, 255, 1)",
+      "background-color": "rgba(47, 51, 89, 1)",
+      "text-color": "rgba(199, 237, 255, 1)",
+      "submenu-icon-color": "rgba(199, 233, 255, 1)"
+    }
+  },
+  "darkMenuThemeColors": {},
+  "enableDarkModeForMenuThemes": false,
+  "sidebarVisible": false,
+  "enableVersionCheck": true,
+  "zoomFactor": 1
+}

@@ -158,32 +158,29 @@ tooltip {
 }
 
 
-
 @keyframes musicplayannimation {
     0% {
-        background: linear-gradient(to top right, #00E0EE, #db8dff);
-    }
 
-    50% {
-        background: linear-gradient(to top right, #db8dff, #00E0EE);
+        background-position: 100% 0;
     }
 
     100% {
-        background: linear-gradient(to top right, #00E0EE, #db8dff);
+        background-position: 0% 0;
     }
 }
 
 
 #mpris {
     font-family: "JMH";
-    background: linear-gradient(to top right, #00E0EE, #db8dff);
+    background: linear-gradient(45deg, #fddca9 25%, #a5f2ff 25%, #a5f2ff 50%, #e4b5ff 50%, #e4b5ff 75%, #fddca9 75%, #fddca9 100%);
+    background-size: 400% 100%;
     color: #000f17;
     margin: 6px 10px 6px 0px;
     padding: 0px 14px;
     border-radius: 14px;
     transition: all;
-    transition-duration: 400ms;
-    animation: musicplayannimation 4s;
+    transition-duration: 800ms;
+    animation: musicplayannimation 9s linear;
     animation-iteration-count: infinite;
 }
 
@@ -218,12 +215,13 @@ tooltip {
 
 
 #workspaces button {
+    box-shadow: none;
     border-radius: 13px;
     border: none;
     padding: 0 10px;
     color: #ffffff;
     margin: 0 5px;
-    background: linear-gradient(to right, rgba(190, 251, 255, 0), rgba(190, 251, 255, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
     transition: all;
     transition-duration: 400ms;
 }
@@ -253,6 +251,16 @@ tooltip {
     background-color: #ff5a57;
 }
 
+/* #workspaces button.empty {
+    color: #6d6d6d;
+    background-color: rgba(0, 0, 0, 0);
+}
+#workspaces button.empty:hover {
+    background: linear-gradient(to top right, #50ffff, #6207d0);
+    color: #ffffff;
+
+
+} */
 
 #clock {
     background: linear-gradient(to top right, #b68bff, #8bfff1);
@@ -328,7 +336,7 @@ tooltip {
 }
 
 #tray {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 8px 0px 8px 10px;
     padding: 0px 12px;
     border-radius: 12px;
@@ -337,11 +345,12 @@ tooltip {
 }
 
 #tray:hover {
-    background-color: rgba(0, 136, 255, 0.7);
+    background-color: rgba(0, 136, 255, 0.5);
 }
 
 #privacy {
-    margin: 0px 10px 0px 0px;
+    margin: 0px 15px 0px 0px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* #privacy-item.audio-out {
@@ -359,9 +368,29 @@ tooltip {
     border-radius: 5px;
 } */
 #privacy-item {
-    background-color: #ff0000;
-    color: #ff0000;
+    background-color: #ff2626;
+    color: rgba(0, 0, 0, 0);
     margin: 15px 0;
     padding: 0 4px;
     border-radius: 5px;
+    /* animation: blink 2s;
+    animation-iteration-count: infinite; */
 }
+
+/* @keyframes blink {
+    0% {
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    25% {
+        background-color: #9aff15;
+    }
+
+    75% {
+        background-color: #9aff15;
+    }
+
+    100% {
+        background-color: rgba(255, 0, 0, 0);
+    }
+} */
